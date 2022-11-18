@@ -19,7 +19,6 @@ export const spendSlice = createSlice({
             
             state.budget = state.initialMoney - state.items.reduce((acc, product) => acc + product.count * product.productPrice, 0);
             
-
         },
 
     }

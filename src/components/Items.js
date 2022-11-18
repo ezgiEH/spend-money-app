@@ -6,7 +6,7 @@ import Item from './Item'
 function Items() {
     const items = useSelector((state) => state.spend.items)
     return (
-        <SimpleGrid minChildWidth='200px' spacing='40px'>
+        <SimpleGrid p={4} minChildWidth='240px' spacing='20px' >
             {items.map((item) => (
                 <Item key={item.id} item={item} />
             ))}

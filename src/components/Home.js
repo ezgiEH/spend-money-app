@@ -6,13 +6,13 @@ import Reciples from './Reciples'
 
 function Home() {
     return (
-        <div className="App">
-            <Container p={20} width={1000}>
-                <Header />
-                <Items />
-                <Reciples />
-            </Container>
-        </div>
+
+        <Container maxW={{ base: '1100px', md: '1100px'}}>
+            <Header />
+            <Items />
+            <Reciples />
+        </Container>
+
     )
 }
 
